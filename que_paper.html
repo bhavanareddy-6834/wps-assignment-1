@@ -72,8 +72,12 @@ input[type=submit],input[type=reset]{
   content="";
   con="";
    function show(){
-    for (var j=1;j<=i;j++){
-      document.writeln("<label>Option "+j+"</label><br><input type="+"text><br><br>"); 
+//     for (var j=1;j<=i;j++){
+//       document.writeln("<label>Option "+j+"</label><br><input type="+"text><br><br>"); 
+//      }
+     var j=request.form["form"]["nofopt"];
+     for (var k=1;k<=j;k++){
+       document.writeln("<label>Option "+k+"</label><br><input type="+"text><br><br>"); 
      }
 }
   </script>
